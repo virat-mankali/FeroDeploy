@@ -1,1 +1,1 @@
-web: python run.py
+web: gunicord run:app
