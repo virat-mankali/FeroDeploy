@@ -1,1 +1,1 @@
-web: gunicorn run:app
+web: gunicorn -k eventlet 'app:create_app()'
