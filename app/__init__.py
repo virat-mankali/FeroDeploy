@@ -30,7 +30,7 @@ def create_app():
     CORS(app)
 
     # Initialize SocketIO 
-    socketio.init_app(app)
+    socketio.init_app(app, async_mode='eventlet')
 
     # Register routes for user.py
     from app.routes.users import user_bp
